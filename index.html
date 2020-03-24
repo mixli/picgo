@@ -25,11 +25,7 @@
 		<![endif]--> 
 		<meta name="description" content="图片,壁纸,二次元,P站画师">
 		<meta name="keywords" content="图片,壁纸,二次元,P站画师">
-		<meta name="generator" content="Typecho 1.1/17.10.30">
 		<meta name="template" content="lolicon">
-		<link rel="alternate" type="application/rss+xml" title="ifloli » RSS 2.0" href="https://loli.catct.cn/feed/">
-		<link rel="alternate" type="application/rdf+xml" title="ifloli » RSS 1.0" href="https://loli.catct.cn/feed/rss/">
-		<link rel="alternate" type="application/atom+xml" title="ifloli » ATOM 1.0" href="https://loli.catct.cn/feed/atom/">
 		<!--[if lt IE 8]>
 			<div class="browsehappy" role="dialog">当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.</div> 
 		<![endif]--> 
@@ -41,7 +37,7 @@
 						<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> 
 					</button> 
 					<h1 class="header-title anti-select">
-						<a href="https://loli.catct.cn/">ifloli</a>
+						<a href="http://img.miniyun.top/">NixCL</a>
 					</h1> 
 				</div>  
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
@@ -76,18 +72,16 @@
 			</div> 
 		</nav> 
 		<header class="header"> 
-			<h1 class="header-title anti-select">
-				<a href="https://loli.catct.cn/">ifloli</a></h1> 
+			<h1 class="header-title anti-select"><a href="https://loli.catct.cn/">NixCL</a></h1> 
 		</header>
-		<div class="content"> 
+		<!-- 图片 -->
+		<div id="images" class="content"> 
 			<div id="masonry" class="post row" style="position: relative; height: 2150.7px;"> 
-			<div data-fancybox="gallery" class="post-item col-xs-6 col-sm-4 col-md-3" data-src="https://loli.catct.cn/usr/uploads/2020/02/3317928044.jpg" style="position: absolute; left: 0px; top: 0px;"> 
+				<div data-fancybox="gallery" class="post-item col-xs-6 col-sm-4 col-md-3" data-src="https://loli.catct.cn/usr/uploads/2020/02/3317928044.jpg" style="position: absolute; left: 0px; top: 0px;"> 
 				<a href="https://loli.catct.cn/usr/uploads/2020/02/3317928044.jpg"> 
 					<img class="post-item-img lazy" data-original="https://loli.catct.cn/usr/uploads/2020/02/3317928044.jpg" title="第八十七期 [1]" alt="第八十七期 [2]" src="https://loli.catct.cn/usr/uploads/2020/02/3317928044.jpg" style=""> </a> 
-
-			</div>
-
-		</div> 
+				</div>
+			</div> 
 
 		<div class="post-tags color-tags">  </div>
 		<div id="side-button"> 
@@ -104,21 +98,12 @@
 			</ul> 
 		</div> 
 		<div id="no-data"></div> 
-		<div id="side-button"> 
-			<ul> 
-				<li id="go-top" style=""><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></li> 
-				<li id="go-bottom" style=""><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span></li> 
-				<li id="show-qrcode" onclick="showQrcode()"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></li> 
-			</ul> 
-		</div> 
 
 	<footer class="footer"> 
 		<p class="related">本图床托管于： <a href="https://catct.cn/" target="_blank">github</a>本站已运行</p> 
-		<p class="related"> © 2020 <a href="https://ifloli.com/">ifloli</a></p> 
-		<p class="footcopy">本站图片均来源于互联网，图片版权归原作者/出处所有，若构成侵权请联系我删除。</p> 
-		<p class="footcopy">
-			<a href="mailto:evamaill@icloud.cn">联系我</a> 
-		</p> 
+		<p class="related"> © 2020 <a href="https://ifloli.com/">似梦；缘尽</a></p> 
+		<p class="footcopy">本站图片均来源于互联网，样式来源<a href="https://ifloli.com/">ifloli</a>，如有侵权请告知我删除。</p> 
+		<p class="footcopy"><a href="mailto:evamaill@icloud.cn">联系我</a> </p> 
 	</footer> 
 	<script src="./assets/js/push.js"></script>
 	<script src="./assets/js/hm.js"></script>
@@ -338,29 +323,62 @@
 		},200);
 	}
 </script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?d5d01994923a331cf0abec73072f968a";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+
+
+
+
+
+
+<script type="text/javascript">
+var tbsource = "1";//本地文件夹路径
+ 
+var hdfiles = "";
+ 
+var objFSO =new ActiveXObject('Scripting.FileSystemObject');
+ 
+if(!objFSO.FolderExists(tbsource))
+ 
+{
+ 
+alert("<"+tbsource+">该文件夹路径不存在，或者路径不能含文件名！");
+ 
+objFSO = null;
+ 
+//return;
+ 
+}
+ 
+var objFolder = objFSO.GetFolder(tbsource);
+ 
+var colFiles = new Enumerator(objFolder.Files);
+ 
+//var re_inf1 = /\.jpg$/; 验证文件夹文件是否jpg文件
+ 
+//var re_inf1 = /\[.](jpg|gif|bmg)$/;
+ 
+var re_inf1 =/\.(gif|jpg|jpeg|bmp)$/i;
+ 
+for (; !colFiles.atEnd(); colFiles.moveNext()) //读取文件夹下文件
+ 
+{
+ 
+    var objFile = colFiles.item();
+     
+    if(re_inf1.test(objFile.Name.toLowerCase()))
+     
+    {
+     
+    hdfiles = hdfiles+"<img src='1/"+objFile.Name+"'>";
+     
     }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
+ 
+}
+ 
+alert(hdfiles);
+document.getElementById("pic").innerHTML=hdfiles;
+ 
 </script>
+
 
 
 
